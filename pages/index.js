@@ -40,25 +40,26 @@ const Page = () => {
         axios.get(result).then(resp => setData(resp.data))
     }
     return (
-        <div className={style.container}>
-            <header>SpaceX Launch Programs</header>
-            <aside>
-            <Filter
-            onClickHandler={onClickAppendParams}
-            /> 
-            </aside>
-            {data && data.map((el,id) => {
-              return  <Card 
-              key={id + url}
-              icon={el.links.mission_patch}
-              missionName={`${el.mission_name} # ${el.flight_number}`}
-              launchYear={el.launch_year}
-              successfulLaunch={`${el.launch_success}`}
-              missionId={el.mission_id}
-              />  
-            }
-            )}
-            <footer>Developed by: Akshara</footer>
+        <div className={style.containerWrapper}>
+            <div id="header" className={style.header}><h1 className={style.heading}>SpaceX Launch Programs</h1></div>
+            <div className={style.container}>
+                <div className={style.menu}>
+                <Filter onClickHandler={onClickAppendParams}/>
+                </div>
+                <div className={style.content}>
+                {data && data.map((el,id) => {
+                    return  <Card 
+                    key={id + url}
+                    icon={el.links.mission_patch}
+                    missionName={`${el.mission_name} # ${el.flight_number}`}
+                    launchYear={el.launch_year}
+                    successfulLaunch={`${el.launch_success}`}
+                    missionId={el.mission_id}
+                    />  
+                    })}
+                </div>
+            </div>
+            <div className={style.footer}>Developed by: <span className={style.footerText}>Akshara Ahluwalia</span></div>
         </div>
     )
 }

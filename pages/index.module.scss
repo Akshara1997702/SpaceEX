@@ -1,6 +1,27 @@
 @import url('https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2');
 
-.container {
+.containerWrapper {
     background-color: #eeeeee;
     font-family: 'Roboto', sans-serif;
+    .header {
+        .heading {
+            font-size: 20px;
+        }
+    }
+    .container {
+        display: flex;
+        .content {
+            display: flex;
+            flex-flow: wrap;
+        }
+    }
+    .footer {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        .footerText {
+            font-size: 18px;
+            font-weight: 200; 
+        }
+    }
 }
