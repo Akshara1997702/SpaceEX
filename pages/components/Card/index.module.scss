@@ -1,9 +1,9 @@
 .cardWrapper {
     padding: 10px;
     border-radius: 5px;
-    width: 200px;
+    width: 165px;
     background-color: #ffffff;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     .iconWrapper {
         background-color: #eeeeee;
         border-radius: 5px;
@@ -11,8 +11,8 @@
         justify-content: center;
         align-items: center;
         .icon {
-            width: 190px;
-            height: 190px;
+            width: 160px;
+            height: 165px;
             object-fit: cover;
         }
     }
@@ -31,10 +31,11 @@
                 font-weight: 600;
 
                 .missionId {
-                    color: #9e9e9e ;
+                    color: #3949ab;
                     font-size: 15px;
                     padding-left: 20px;
                     list-style-type: none;
+                    font-weight: 200;
                 }
             }
                 .missionHeading {
@@ -44,9 +45,9 @@
                     margin-bottom: 10px;
                 }
                 .missionId {
-                    color: #9e9e9e ;
+                    color: #3949ab;
                     font-size: 14px;
-                    font-weight: 600;
+                    font-weight: 200;
                     margin-left: 5px;
                 }
 
