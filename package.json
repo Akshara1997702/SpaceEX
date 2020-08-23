@@ -1,8 +1,9 @@
 {
-    "scripts": {
-        "dev": "next",
-        "test": "jest"
-    },
+        "scripts": {
+          "dev": "next",
+          "build": "next build",
+          "start": "next start"
+        },
     "dependencies": {
         "axios": "^0.20.0",
         "next": "^9.5.2",
