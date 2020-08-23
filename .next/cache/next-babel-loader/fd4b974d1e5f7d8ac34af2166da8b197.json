@@ -1,0 +1,1 @@
+{"ast":null,"code":"test('It should render correctly', () => {\n  expect(1).toBe(1);\n});","map":null,"metadata":{},"sourceType":"script"}
