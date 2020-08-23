@@ -106,6 +106,7 @@ module.exports = __webpack_require__("kOYq");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "data", function() { return data; });
 const data = [{
   id: 1,
   heading: 'Launch Year',
@@ -176,7 +177,6 @@ const data = [{
     text: 'false'
   }]
 }];
-/* harmony default export */ __webpack_exports__["default"] = (data);
 
 /***/ })
 

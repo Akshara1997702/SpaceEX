@@ -187,7 +187,7 @@ const Filter = ({
     className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterContainer
   }, __jsx("div", {
     className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterHeading
-  }, "Filters"), _constants__WEBPACK_IMPORTED_MODULE_3__["default"] && _constants__WEBPACK_IMPORTED_MODULE_3__["default"].map(el => {
+  }, "Filters"), _constants__WEBPACK_IMPORTED_MODULE_3__["data"] && _constants__WEBPACK_IMPORTED_MODULE_3__["data"].map(el => {
     return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
       className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.headingWrapper
     }, __jsx("p", {
@@ -424,6 +424,7 @@ module.exports = require("react");
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "data", function() { return data; });
 const data = [{
   id: 1,
   heading: 'Launch Year',
@@ -494,7 +495,6 @@ const data = [{
     text: 'false'
   }]
 }];
-/* harmony default export */ __webpack_exports__["default"] = (data);
 
 /***/ }),
 
