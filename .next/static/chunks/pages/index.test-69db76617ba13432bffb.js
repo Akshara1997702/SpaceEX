@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[12],{HvVg:function(n,o,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/index.test",function(){return t("y/TI")}])},"y/TI":function(n,o){test("It should render correctly",(function(){expect(1).toBe(1)}))}},[["HvVg",0]]]);

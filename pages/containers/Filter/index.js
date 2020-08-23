@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button/index';
 import style from './index.module.scss';
-import data from './constants';
+import data from '../../constants';
 
 const Filter = ({onClickHandler}) => {
     return (
