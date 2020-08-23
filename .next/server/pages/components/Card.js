@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,139 +88,92 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "/a9y":
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("5bZr");
+
+
+/***/ }),
+
+/***/ "5bZr":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("BR38");
+/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var _interopRequireDefault = __webpack_require__("TqRt");
 
-exports.__esModule = true;
-exports.default = void 0;
-
-var _react = _interopRequireDefault(__webpack_require__("cDcd"));
-
-var _head = _interopRequireDefault(__webpack_require__("UlpK"));
-
-const statusCodes = {
-  400: 'Bad Request',
-  404: 'This page could not be found',
-  405: 'Method Not Allowed',
-  500: 'Internal Server Error'
+const Card = ({
+  icon,
+  missionName,
+  missionId,
+  launchYear,
+  successfulLaunch,
+  successfulLanding
+}) => {
+  return __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cardWrapper
+  }, __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.iconWrapper
+  }, __jsx("img", {
+    src: icon,
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.icon
+  })), __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cardInfo
+  }, __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.cardName
+  }, missionName), __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionInfo
+  }, __jsx("ul", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionHeadingList
+  }, "Mission Ids:", missionId && missionId.map(el => __jsx("li", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionId
+  }, el))), __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionHeading
+  }, "Launch Year: ", __jsx("span", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionId
+  }, launchYear)), __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionHeading
+  }, "Successful", __jsx("br", null), " Launch: ", __jsx("span", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionId
+  }, successfulLaunch)), __jsx("div", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionHeading
+  }, "Successful", __jsx("br", null), "Landing: ", __jsx("span", {
+    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.missionId
+  }, successfulLanding)))));
 };
 
-function _getInitialProps({
-  res,
-  err
-}) {
-  const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
-  return {
-    statusCode
-  };
-}
-/**
-* `Error` component used for handling errors.
-*/
+/* harmony default export */ __webpack_exports__["default"] = (Card);
 
+/***/ }),
 
-class Error extends _react.default.Component {
-  render() {
-    const {
-      statusCode
-    } = this.props;
-    const title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
-    return /*#__PURE__*/_react.default.createElement("div", {
-      style: styles.error
-    }, /*#__PURE__*/_react.default.createElement(_head.default, null, /*#__PURE__*/_react.default.createElement("title", null, statusCode, ": ", title)), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("style", {
-      dangerouslySetInnerHTML: {
-        __html: 'body { margin: 0 }'
-      }
-    }), statusCode ? /*#__PURE__*/_react.default.createElement("h1", {
-      style: styles.h1
-    }, statusCode) : null, /*#__PURE__*/_react.default.createElement("div", {
-      style: styles.desc
-    }, /*#__PURE__*/_react.default.createElement("h2", {
-      style: styles.h2
-    }, title, "."))));
-  }
+/***/ "BR38":
+/***/ (function(module, exports) {
 
-}
-
-exports.default = Error;
-Error.displayName = 'ErrorPage';
-Error.getInitialProps = _getInitialProps;
-Error.origGetInitialProps = _getInitialProps;
-const styles = {
-  error: {
-    color: '#000',
-    background: '#fff',
-    fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
-    height: '100vh',
-    textAlign: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  desc: {
-    display: 'inline-block',
-    textAlign: 'left',
-    lineHeight: '49px',
-    height: '49px',
-    verticalAlign: 'middle'
-  },
-  h1: {
-    display: 'inline-block',
-    borderRight: '1px solid rgba(0, 0, 0,.3)',
-    margin: 0,
-    marginRight: '20px',
-    padding: '10px 23px 10px 0',
-    fontSize: '24px',
-    fontWeight: 500,
-    verticalAlign: 'top'
-  },
-  h2: {
-    fontSize: '14px',
-    fontWeight: 'normal',
-    lineHeight: 'inherit',
-    margin: 0,
-    padding: 0
-  }
+// Exports
+module.exports = {
+	"cardWrapper": "Card_cardWrapper__1C4ng",
+	"iconWrapper": "Card_iconWrapper__1oIhd",
+	"icon": "Card_icon__3n5jA",
+	"cardInfo": "Card_cardInfo__iFxd5",
+	"cardName": "Card_cardName__FJBen",
+	"missionInfo": "Card_missionInfo__3wyhw",
+	"missionHeadingList": "Card_missionHeadingList__2JK0W",
+	"missionId": "Card_missionId__1I9AG",
+	"missionHeading": "Card_missionHeading__2P_ok"
 };
 
-/***/ }),
-
-/***/ 6:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("/a9y");
-
-
-/***/ }),
-
-/***/ "TqRt":
-/***/ (function(module, exports) {
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-
-module.exports = _interopRequireDefault;
-
-/***/ }),
-
-/***/ "UlpK":
-/***/ (function(module, exports) {
-
-module.exports = require("next/dist/next-server/lib/head.js");
 
 /***/ }),
 
