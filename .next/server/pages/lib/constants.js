@@ -88,138 +88,25 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "+CRI":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("2B5T");
-/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_1__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Button = ({
-  text,
-  onClickHandler
-}) => {
-  return __jsx("div", {
-    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.buttonWrapper
-  }, __jsx("input", {
-    type: "button",
-    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_1___default.a.button,
-    value: text,
-    onClick: onClickHandler
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Button);
-
-/***/ }),
-
-/***/ "2B5T":
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"buttonWrapper": "Button_buttonWrapper__2s7EW",
-	"button": "Button_button__3H8XZ",
-	"active": "Button_active__sC3iF"
-};
-
-
-/***/ }),
-
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("5/9h");
+module.exports = __webpack_require__("FR0X");
 
 
 /***/ }),
 
-/***/ "5/9h":
+/***/ "FR0X":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Button_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("+CRI");
-/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("ZH79");
-/* harmony import */ var _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_module_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("kOYq");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-const Filter = ({
-  onClickHandler
-}) => {
-  return __jsx("div", {
-    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterContainer
-  }, __jsx("div", {
-    className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterHeading
-  }, "Filters"), _constants__WEBPACK_IMPORTED_MODULE_3__["data"] && _constants__WEBPACK_IMPORTED_MODULE_3__["data"].map(el => {
-    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
-      className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.headingWrapper
-    }, __jsx("p", {
-      className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.heading
-    }, el.heading)), __jsx("div", {
-      className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterWrapper
-    }, el.elements && el.elements.map(element => {
-      return __jsx("div", {
-        className: _index_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.filterButtonWrapper
-      }, __jsx(_components_Button_index__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        text: element.text,
-        onClickHandler: e => onClickHandler(e, el.heading)
-      }));
-    })));
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Filter);
-
-/***/ }),
-
-/***/ "ZH79":
-/***/ (function(module, exports) {
-
-// Exports
-module.exports = {
-	"filterContainer": "Filter_filterContainer__24Aom",
-	"filterHeading": "Filter_filterHeading__3XNWR",
-	"headingWrapper": "Filter_headingWrapper__2m_El",
-	"heading": "Filter_heading__2rYa-",
-	"filterWrapper": "Filter_filterWrapper__1THGP"
-};
-
-
-/***/ }),
-
-/***/ "cDcd":
-/***/ (function(module, exports) {
-
-module.exports = require("react");
-
-/***/ }),
-
-/***/ "kOYq":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "data", function() { return data; });
-const data = [{
+/* harmony default export */ __webpack_exports__["default"] = (() => [{
   id: 1,
   heading: 'Launch Year',
   elements: [{
@@ -288,7 +175,7 @@ const data = [{
     id: 2,
     text: 'false'
   }]
-}];
+}]);
 
 /***/ })
 

@@ -1,10 +1,10 @@
 {
-  "/components/Button": "pages/components/Button.js",
-  "/components/Card": "pages/components/Card.js",
-  "/constants": "pages/constants.js",
-  "/containers/Filter": "pages/containers/Filter.js",
-  "/": "pages/index.js",
+  "/components/Button": "pages/components/Button.html",
+  "/components/Card": "pages/components/Card.html",
+  "/containers/Filter": "pages/containers/Filter.html",
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
 }
