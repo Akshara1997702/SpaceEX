@@ -44,7 +44,7 @@ const Page = () => {
             <div id="header" className={style.header}><h1 className={style.heading}>SpaceX Launch Programs</h1></div>
             <div className={style.container}>
                 <div className={style.menu}>
-                <Filter onClickHandler={onClickAppendParams}/>
+                <Filter onClickHandler={onClickAppendParams} selected={params}/>
                 </div>
                 <div className={style.content}>
                 {data && data.map((el,id) => {
