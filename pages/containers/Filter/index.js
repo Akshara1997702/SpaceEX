@@ -1,8 +1,8 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import Button from '../../components/Button/index';
 import style from './index.module.scss';
 
-const Filter = ({onClickHandler,selected}) => {
+const Filter = ({onClickHandler,launchYear, successfulLanding,successfulLaunch}) => {
     const data = [
         {
             id:1,
@@ -56,10 +56,10 @@ const Filter = ({onClickHandler,selected}) => {
                         return (
                             <div className={style.filterButtonWrapper}>
                             <Button selected={el.heading === 'Launch Year' ? 
-                            selected.launch_year === element.text : 
+                             launchYear === element.text : 
                              el.heading === 'Successful Launch' ?
-                             selected.launch_success === element.text :
-                             selected.land_success === element.text} 
+                             successfulLaunch === element.text :
+                             successfulLanding === element.text} 
                              text={element.text} 
                              onClickHandler={(e)=>onClickHandler(e,el.heading)}/>
                             </div>

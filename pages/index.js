@@ -8,6 +8,9 @@ const Page = () => {
     const [data,setData] = useState(null);
     const [url,setUrl] = useState('https://api.spacexdata.com/v3/launches?limit=100');
     const [params,setParams] = useState({launch_year:undefined, launch_success:undefined,land_success:undefined});
+    const [launchYear,setLaunchYear] = useState(null);
+    const [successfulLaunch,setSuccessfulLaunch] = useState(null);
+    const [successfulLanding,setSuccessfulLanding] = useState(null);
     useEffect(() => {
         getData()
     },[])
@@ -26,10 +29,13 @@ const Page = () => {
         let defaultUrl = 'https://api.spacexdata.com/v3/launches?limit=100';
         if(heading === 'Launch Year'){
             obj.launch_year=event.target.value;
+            setLaunchYear(event.target.value);
         }else if(heading === 'Successful Launch'){
             obj.launch_success=event.target.value;
+            setSuccessfulLaunch(event.target.value);
         } else {
             obj.land_success=event.target.value;
+            setSuccessfulLanding(event.target.value);
         }
         obj.launch_year ?result.push(`launch_year=${obj.launch_year}`) :null;
         obj.launch_success ?result.push(`launch_success=${obj.launch_success}`) :null;
@@ -44,7 +50,7 @@ const Page = () => {
             <div id="header" className={style.header}><h1 className={style.heading}>SpaceX Launch Programs</h1></div>
             <div className={style.container}>
                 <div className={style.menu}>
-                <Filter onClickHandler={onClickAppendParams} selected={params}/>
+                <Filter onClickHandler={onClickAppendParams} launchYear={launchYear} successfulLanding={successfulLanding} successfulLaunch={successfulLaunch} />
                 </div>
                 <div className={style.content}>
                 {data && data.map((el,id) => {
